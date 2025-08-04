@@ -1,0 +1,26 @@
+{
+  "name": "sentimentanalysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samsal6686/sentimentAnalysis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samsal6686/sentimentAnalysis/issues"
+  },
+  "homepage": "https://github.com/samsal6686/sentimentAnalysis#readme",
+  "devDependencies": {
+    "vite": "^7.0.6"
+  }
+}

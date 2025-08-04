@@ -1,0 +1,43 @@
+/* Card styles */
+.stock-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-left: 10px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+/* Sentiment border colors */
+.stock-card.positive {
+  border-left-color: #4caf50; /* green */
+}
+.stock-card.negative {
+  border-left-color: #e53935; /* red */
+}
+.stock-card.neutral {
+  border-left-color: #ffb300; /* yellow/orange */
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sentiment-score {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.recommendation-badge {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.card-body {
+  padding: 0;
+}
