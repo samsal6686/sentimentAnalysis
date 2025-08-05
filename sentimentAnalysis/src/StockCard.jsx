@@ -16,28 +16,13 @@ function getRecommendationIcon(recommendation) {
 }
 
 function getBootstrapColor(recommendation) {
-    switch(recommendation) {
+    switch(recommendation.toLowerCase()) {
         case 'buy': return 'success';
         case 'sell': return 'danger';
         case 'neutral': return 'warning';
         default: return 'secondary';
     }
 }
-/*
-function Card() {
-  return (
-    <>
-        <div className="col-md-6 col-lg-4">
-            <h3>(Name of company) (Stock Ticker)</h3>
-            <h3>0.10 ⚖️ (Neutral)</h3>
-            <h4>Confidence: 75.03%</h4>
-            <h4>Headlines: 9</h4>
-            <p>Analyzed 9/9 headlines using Hugging Face sentiment analysis</p>
-        </div>
-    </>
-  )
-}
-*/
 
 export default function StockCard() {
   const stock = "Apple Inc. (AAPL)";
@@ -54,7 +39,7 @@ export default function StockCard() {
   const recommendationIcon = getRecommendationIcon(analysis.recommendation);
 
   return (
-    <div className="col-md-6 col-lg-4">
+    <div className="col-lg-4 col-md-6 col-12">
       <div className={`card stock-card ${recommendationClass}`}>
         <div className="card-body">
           <h5 className="card-title">{stock}</h5>
